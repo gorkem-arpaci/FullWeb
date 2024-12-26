@@ -25,7 +25,7 @@ const listVenues = async function (req, res) {
   var geoOptions = {
     distanceField: "dis",
     spherical: true,
-    maxDistance: converter.radian2Kilometer(100),
+    maxDistance: 10000 //10 km mesafe,
   };
 
   try {
